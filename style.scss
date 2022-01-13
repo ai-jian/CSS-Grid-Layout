@@ -80,20 +80,8 @@ section {
   align-items: center;
 }
 
-#column-2 {
-  .wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-#column-3 {
-  .wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
+#column-2,
+#column-3,
 #column-4 {
   .wrapper {
     display: flex;
@@ -150,20 +138,8 @@ section {
   }
 }
 
-#row-2 {
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: space-between;
-  }
-}
-#row-3 {
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: space-between;
-  }
-}
+#row-2,
+#row-3,
 #row-4 {
   .wrapper {
     display: flex;
