@@ -247,3 +247,64 @@ section {
     }
   }
 }
+
+#landing-page-4 {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 40% auto;
+    grid-template-areas:
+      "a a a"
+      "b c d";
+    gap: $grid-gap;
+
+    .one {
+      grid-area: a;
+    }
+  }
+}
+
+#landing-page-5 {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 40% auto;
+    grid-template-areas:
+      "a a a"
+      "b c d";
+    gap: $grid-gap;
+
+    .one {
+      grid-area: a;
+    }
+  }
+}
+
+#board-magazine {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "a b b"
+      "c d g"
+      "e f g";
+    gap: $grid-gap;
+
+    .one {
+      grid-area: a;
+    }
+    .two {
+      grid-area: b;
+    }
+    .three {
+      grid-area: c;
+    }
+    .four {
+      grid-area: d;
+    }
+    .seven {
+      grid-area: g;
+    }
+  }
+}
