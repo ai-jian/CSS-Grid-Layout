@@ -308,3 +308,70 @@ section {
     }
   }
 }
+
+#blog {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 27% 27% 27% auto;
+    grid-template-areas:
+      "a a e"
+      "b b e"
+      "c c e"
+      "f f e";
+    gap: $grid-gap;
+
+    .one {
+      grid-area: a;
+    }
+    .two {
+      grid-area: b;
+    }
+    .three {
+      grid-area: c;
+    }
+    .four {
+      grid-area: e;
+    }
+    .five {
+      grid-area: f;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      gap: $grid-gap;
+      .icon {
+        height: 50px;
+        width: 50px;
+        background-color: color(block-color);
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+#article {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 40% auto;
+    grid-template-areas:
+      "a a d"
+      "a a d"
+      "b b d"
+      "c c d";
+    gap: $grid-gap;
+
+    .one {
+      grid-area: a;
+    }
+    .two {
+      grid-area: b;
+    }
+    .three {
+      grid-area: c;
+    }
+    .four {
+      grid-area: d;
+    }
+  }
+}
