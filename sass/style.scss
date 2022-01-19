@@ -375,3 +375,53 @@ section {
     }
   }
 }
+
+#article-2 {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 40% auto 10% 25%;
+    grid-template-areas:
+      "a a a"
+      "b b b"
+      "c c c"
+      "d d d";
+    gap: $grid-gap;
+
+    article {
+      grid-area: a;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: $grid-gap;
+    }
+    .three {
+      grid-area: b;
+    }
+    .four {
+      grid-area: c;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      gap: $grid-gap;
+      .icon {
+        height: 50px;
+        width: 50px;
+        background-color: color(block-color);
+        border-radius: 50%;
+      }
+    }
+    .five {
+      grid-area: d;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      gap: $grid-gap;
+      .icon {
+        height: 100%;
+        width: 100%;
+        background-color: color(block-color);
+        border-radius: $section-border;
+      }
+    }
+  }
+}
